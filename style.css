@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+/* hi this is a comment */
+.head{
+    position: fixed;
+    height: 70px;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+.div{
+    /* display: inline; */
+    background-color: rgb(255, 255, 255);
+}
+.logo{
+    background-color: #03045E;
+    width: 170px;
+}
+.btns{
+    position: relative;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+.btn1{
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    border-radius: 20px 20px 0px 20px ;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #90E0EF;
+    font-family: sans-serif;
+}
+.btn2{
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    border-radius: 20px 20px 20px 0px;
+    border: 1px solid white;
+    background-color: #90E0EF;
+    font-family:  sans-serif;
+}
+.btn1:hover{
+    background-color: #03045E;
+    color: white;
+}
+.btn2:hover{
+    background-color: #03045E;
+    color: white;
+}
+.menu{
+    position: fixed;
+    display: flex;
+    top: 70px;
+    width: 100vw;
+    height: 50px;
+    background-color: #90E0EF;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu-item{
+    
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 16.7vw;
+    justify-content: center;
+    transition-duration: 0.7s;
+}
+.menu-item:hover{
+    background-color: #03045E;
+    color: white;
+}
+.menu-item a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 16.7vw;
+    transition-duration: 1s;
+}
+.menu-item a:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+}
+@media (max-width:500px) {
+    .menu-item a{
+        font-size: 0.5em;
+    }
+    .btn1{
+        width: 50px;
+        font-size: 0.5em;
+        margin: 7px;
+        padding: 7px;
+    }
+    .btn2{
+        width: 50px;
+        font-size: 0.5em;
+        margin: 7px;
+        padding: 7px;
+    }
+    .btns{
+        right: 10px;
+    }
+    
+    .logo{
+        width: 100px;
+    }
+    .head{
+        height: 50px;
+    }
+    .menu{
+        top: 50px;
+        height: 30px;
+    }
+}

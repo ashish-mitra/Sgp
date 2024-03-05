@@ -1,0 +1,184 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+
+.slider{
+	position: relative;
+	top: 120px;
+	width: 100%;
+	background: #5c9c77; 
+}
+.myslide{
+	height: 655px;
+	display: none;
+	overflow: hidden;
+}
+@media(max-width:500px){
+	.slider{
+		top: 80px;
+	}
+}
+
+.prev, .next{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.1s;
+	user-select: none;
+}
+.prev:hover, .next:hover{
+	color: #1ed84d; /* blue */
+}
+.next{
+	right: 0;
+	z-index: 2;
+}
+.dotsbox{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 20px;
+	cursor: pointer;
+}
+.dot{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}
+
+.active, .dot:hover{
+	border-color: #2ece3b; 
+	border-radius: 0;
+	transform: rotate(45deg);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s; 
+}
+
+@keyframes fade {
+  0% {opacity: 0.5}
+  100%{opacity: 1}
+}
+
+.txt{
+	position: absolute;
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 50px;
+	top: 20%;
+	left: 15%;
+  	animation-name: posi;
+  	animation-duration: 2s;
+	z-index: 1;
+	width: 40%;
+	
+}
+
+
+@keyframes posi {
+  from {left: 35%;}
+  to {left: 15%;}
+}
+
+.txt h1{
+	color: #03045e; 
+	font-size: 50px;
+	margin-bottom: 20px;
+	font-family: serif;
+	font-style: italic;
+}
+.txt p{
+	font-weight: bold;
+	font-size: 20px;
+	font-family: serif;
+	font-style: italic;
+	line-height: 20px;
+}
+
+img{
+	transform: scale(1.5, 1.5);
+  	animation-name: zoomin;
+  	animation-duration: 40s;
+}
+
+@keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+
+@media screen and (max-width: 800px){
+	.myslide{
+		height: 500px;
+	}
+	.txt{
+		letter-spacing: 2px;
+		line-height: 25px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		animation-name: posi2;
+		animation-duration: 2s;
+	}
+
+	@keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+	.txt h1{
+		font-size: 40px;
+	}
+	.txt p{
+		font-size: 13px;
+	}
+
+}
+
+@media screen and (max-width: 520px){
+	.txt h1{
+		font-size:20px;
+		margin-bottom: 20px;
+	}
+	
+}
+
+@media (max-width:600px){
+	.txt h1{
+		font-size: 1em;
+		line-height: 2px;
+	}
+	.txt p{
+		font-size: 0.5em;
+		line-height: 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

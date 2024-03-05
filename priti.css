@@ -1,0 +1,112 @@
+.numpage {
+    background-color: #caf0f8;
+    height: 170px;
+    width: 100%;
+    top: 60vh;
+    position: absolute;
+}
+
+.nums {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    margin-top: 50px;
+    justify-content: space-evenly;
+
+
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    font-weight: 900;
+}
+
+
+
+@media(min-width:900px) and (max-width:1030px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .numpage {
+        height: 95px;
+    }
+
+    .nums {
+        margin-top: 30px;
+    }
+}
+
+@media(min-width:480px) and (max-width:900px) {
+    h1 {
+        font-size: 15px;
+    }
+
+    .numpage {
+        height: 95px;
+    }
+
+    .nums {
+        margin-top: 30px;
+    }
+}
+
+@media(min-width:320px) and (max-width:480px) {
+    h1 {
+        font-size: 10px;
+
+    }
+
+    .numpage {
+        height: 75px;
+    }
+
+    .nums {
+        margin-top: 30px;
+    }
+}
+
+@media(min-width:100px) and (max-width:320px) {
+    h1 {
+        font-size: 8px;
+
+    }
+
+    .numpage {
+        height: 50px;
+    }
+
+    .nums {
+        margin-top: 18px;
+    }
+}
+
+.hero-section {
+    background-color: rgb(4, 72, 22);
+    height: 43vh;
+    top: 17vh;
+    position: relative;
+}
+
+.sentence {
+    height: 120px;
+    width: 700px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    top: 130px;
+    position: absolute;
+    font-size: xx-large;
+}
+
+.contact {
+    height: 120px;
+    width: 700px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    top: 250px;
+    left: 560px;
+    position: absolute;
+}
