@@ -23,19 +23,6 @@ function resetTimer() {
 	timer = setInterval(autoSlide, 6000);
 }
 
-let stops = document.querySelectorAll(".stop");
-
-stops.forEach(stop => {
-    stop.addEventListener("mouseenter", () => {
-        clearInterval(timer);
-    });
-});
-
-stops.forEach(stop => {
-    stop.addEventListener("mouseleave", () => {
-        timer = setInterval(autoSlide, 6000);
-    });
-});
 
 
 
