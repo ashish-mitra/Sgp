@@ -7,7 +7,7 @@
 /* hi this is a comment */
 .head{
     position: fixed;
-    height: 70px;
+    height: 100px;
     width: 100vw;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -17,10 +17,13 @@
 .div{
     /* display: inline; */
     background-color: rgb(255, 255, 255);
+    margin-left: 10px;
 }
 .logo{
-    background-color: #03045E;
-    width: 170px;
+    background-image: url("sgp.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 250px;
 }
 .btns{
     position: relative;
@@ -58,7 +61,7 @@
 .menu{
     position: fixed;
     display: flex;
-    top: 70px;
+    top: 100px;
     width: 100vw;
     height: 50px;
     background: linear-gradient(to bottom, #a9e4ee, #78d8e9, #13c6e6);
@@ -95,7 +98,7 @@
     align-items: center;
     color: white;
 }
-@media (max-width:500px) {
+@media (max-width:580px) {
     .menu-item a{
         font-size: 0.5em;
     }
@@ -116,7 +119,7 @@
     }
     
     .logo{
-        width: 100px;
+        width: 120px;
     }
     .head{
         height: 50px;
@@ -130,23 +133,14 @@
 
 .slider{
 	position: relative;
-	top: 120px;
+	top: 150px;
 	width: 100%;
-	background: #5c9c77; 
+	background: #000000; 
 }
 .myslide{
 	height: 655px;
 	display: block;
 	overflow: hidden;
-}
-@media(max-width:500px){
-	.slider{
-		top: 80px;
-		
-	}
-	.myslide{
-		height: 200px;
-	}
 }
 
 .prev, .next{
@@ -193,12 +187,15 @@
 
 .fade {
   animation-name: fade;
-  animation-duration: 2.5s; 
+  animation-duration: 8s;
+  animation-timing-function: cubic-bezier(0.74, 0.01, 0.58, 0.97); 
 }
 
 @keyframes fade {
   0% {opacity: 0.5}
-  100%{opacity: 1}
+
+  30%,90%{opacity: 1;}
+  100%{opacity: 0.5}
 }
 
 .txt{
@@ -248,7 +245,7 @@ img{
 }
 
 
-@media screen and (max-width: 800px){
+@media (max-width: 800px){
 	.myslide{
 		height: 500px;
 	}
@@ -275,6 +272,25 @@ img{
 	}
 
 }
+@media(max-width:580px){
+	.slider{
+		top: 80px;
+		
+	}
+	.myslide{
+		height: 300px;
+	}
+}
+@media(max-width:580px){
+	.slider{
+		top: 80px;
+		
+	}
+	.myslide{
+		height: 400px;
+	}
+}
+
 
 @media screen and (max-width: 520px){
 	.txt h1{
@@ -298,7 +314,7 @@ img{
 
 @media (max-width:425px){
     .myslide{
-        height: 60vh;
+        height: 270px;
     }
 }
 
