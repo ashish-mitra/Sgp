@@ -143,47 +143,6 @@
 	overflow: hidden;
 }
 
-.prev, .next{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	font-size: 50px;
-	padding: 15px;
-	cursor: pointer;
-	color: #fff;
-	transition: 0.1s;
-	user-select: none;
-}
-.prev:hover, .next:hover{
-	color: #1ed84d; /* blue */
-}
-.next{
-	right: 0;
-	z-index: 2;
-}
-.dotsbox{
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%);
-	bottom: 20px;
-	cursor: pointer;
-}
-.dot{
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	border: 3px solid #fff;
-	border-radius: 50%;
-	margin: 0 10px;
-	cursor: pointer;
-	transition-duration: 0.2s;
-}
-
-.active, .dot:hover{
-	border-color: #2ece3b; 
-	border-radius: 0;
-	transform: rotate(45deg);
-}
 
 .fade {
   animation-name: fade;
@@ -193,8 +152,7 @@
 
 @keyframes fade {
   0% {opacity: 0.5}
-
-  30%,90%{opacity: 1;}
+  10%,90%{opacity: 1;}
   100%{opacity: 0.5}
 }
 
@@ -219,10 +177,10 @@
 }
 
 .txt h1{
-	color: #03045e; 
+	color: #08efff; 
 	font-size: 50px;
 	margin-bottom: 20px;
-	font-family: serif;
+	font-family: "Playpen Sans", cursive;
 	font-style: italic;
 }
 .txt p{
