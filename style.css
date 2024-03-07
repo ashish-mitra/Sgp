@@ -71,7 +71,7 @@
 }
 .menu-item{
     
-    height: 50px;
+    height: 100%;
     display: flex;
     align-items: center;
     width: 16.7vw;
@@ -101,6 +101,7 @@
 @media (max-width:580px) {
     .menu-item a{
         font-size: 0.5em;
+	height: 30px;
     }
     .btn1{
         width: 50px;
