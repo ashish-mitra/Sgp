@@ -136,7 +136,8 @@
 	position: relative;
 	top: 150px;
 	width: 100%;
-	background: #000000; 
+	background: #000000;
+	overflow: hidden;
 }
 .myslide{
 	height: 655px;
